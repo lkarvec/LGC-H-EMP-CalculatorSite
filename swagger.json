@@ -1,0 +1,143 @@
+{
+	"swagger":"2.0",
+	"info": {
+		"description":"High Altitude EMP Calculator API",
+		"title":"HEMP API",
+		"version":"1.0.0"
+	},
+	"host":"localhost:14500",
+	"basePath":"/",
+	"produces": [
+		"application/json"
+	],
+	"schemes": [
+		"https"
+	],
+	"securityDefinitions": {
+	},
+	"tags": [
+		{ "name":"hello"
+		,"description":"Says hello to the caller"
+		},
+		{
+			"name": "emp"
+		,"description": "HEMP calculation functions"
+		}
+	],
+	"paths": {
+		"/hello": {
+			"get": {
+				"parameters":[
+				]
+				,"description":"The proverbial hello world minus the world."
+				,"tags":[
+					"hello"
+				]
+				,"responses":{
+					"200": {
+						"description":"Hello response to caller"
+					}
+				}
+			}
+		},
+		"/emp/calc" : {
+			"post": {
+				"parameters":[
+					{
+						"in":"body",
+						"name":"body",
+						"description":"Inputs for the HEMP calculator",
+						"required":true,
+						"schema":{
+							"$ref":"#/definitions/HEMP-Input"
+						}
+					}
+				],
+				"description": "Use the HEMP calculator",
+				"tags": [
+					"emp"
+				],
+				"responses": {
+					"200": {
+						"description": "The results of the calculation"
+					},
+					"400": {
+						"description": "Invalid parameters"
+					},
+					"500": {
+						"description": "Error executing the calculator"
+					}
+				}
+			}
+		}
+	}
+	,"definitions":{
+		"HEMP-Input": {
+			"type": "object",
+			"properties": {
+				"x": {
+					"type": "number"
+				},
+				"y": {
+					"type": "number"
+				},
+				"z": {
+					"type": "number"
+				},
+				"hob": {
+					"type": "number"
+				},
+				"gamyld": {
+					"type": "number"
+				},
+				"bfield": {
+					"type": "number"
+				},
+				"bangle": {
+					"type": "number"
+				},
+				"ndelr": {
+					"type": "integer"
+				},
+				"oux": {
+					"type": "integer"
+				},
+				"iter": {
+					"type": "integer"
+				},
+				"ap": {
+					"type": "number"
+				},
+				"bp": {
+					"type": "number"
+				},
+				"rnp": {
+					"type": "number"
+				},
+				"top": {
+					"type": "number"
+				}
+			},
+			"required": [
+				"x",
+				"y",
+				"z",
+				"hob",
+				"gamyld",
+				"bfield",
+				"bangle",
+				"ndelr",
+				"oux",
+				"iter",
+				"ap",
+				"bp",
+				"rnp",
+				"top"
+			]
+		}
+	},
+	"externalDocs": {
+		"url": "https://fas.org/sgp/crs/natsec/RL32544.pdf",
+		"description": "High Altitude Electromagnetic Pulse Report for Congress"
+	}
+}

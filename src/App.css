@@ -1,0 +1,86 @@
+.App {
+  height: 100vh;
+}
+
+.App-logo {
+  width: 75px;
+  height: 75px;
+  position: relative;
+
+  justify-content: left;
+}
+
+.App-header {
+  background-color: #202a3d;
+  min-height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: #d0d2d9;
+}
+
+.App-link {
+  color: #889db7;
+  background-color: #202a3d;
+  min-height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Body {
+  background-color: #3d4b64;
+  color: #d0d2d9;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  background-color: #202a3d;
+  color: #d0d2d9;
+  min-height: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Input-Space{
+  background-color: #3d4b64;
+  color: #d0d2d9;
+  height: 300px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  margin-left: 15px;
+
+}
+.Input-Row{
+  background-color: #3d4b64;
+  
+  display: grid;
+  grid-template-columns: 1000px 400px;
+}
+
+.Button{
+  background-color: #3d4b64;
+  color: #d0d2d9;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  margin-left: 10px;
+}
+
+.Output{
+  background:#37445b;
+  color: #d0d2d9;
+  margin-top: 20px;
+}
+
+.Single-Input{
+  background:#37445b;
+  color: #d0d2d9;
+}
