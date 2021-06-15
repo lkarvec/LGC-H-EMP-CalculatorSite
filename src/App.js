@@ -54,7 +54,7 @@ class App extends Component {
         <div>
           <img src={logo} className="App-logo" alt="logo" />
           <text>
-            H-EMP Calculator
+            High Altitude EMP - Calculator
           </text>
         </div>
       </header>
@@ -79,12 +79,16 @@ class App extends Component {
               Submit
           </button>
         </div>
+
+        <div className="GraphShakes">
+          <Graph></Graph>
+        </div>
       </div>
 
       <div className="Footer" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
         <p style={{justifyContent:'center', alignItems:'center'}}>
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}><a
-          href="https://reactjs.org"
+          href="https://github.com/lkarvec/LGC-H-EMP-CalculatorSite"
           target="_blank"
           rel="noopener noreferrer"
           className="Doc-link"

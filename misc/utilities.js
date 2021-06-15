@@ -12,6 +12,14 @@ const transport = new (winston.transports.DailyRotateFile)({
 let logger = null;
 
 module.exports = {
+
+	skim : (message) => {
+		//(I = (\d)+ : (\d+\.*\d*))  Regex for the skimmer
+		let y1 = [];
+		let y2 = [];
+		
+	},
+
 	sendResponse: (response, code, msgJson) => {
     	// if msg is not json then wrap it in json
     	const msgType = module.exports.whatIsIt(msgJson);
