@@ -9,8 +9,19 @@ Clean up C++ from Tin
 
 Connect the API to the front end
 
+Create CI/CD (not necessary for our current hosting solution but good practice)
+
+### Known Issues
+CanvasJS graph doesn't resize height properly
+
+Margins look funky, Fix at the end
+
+Output box has a state change issue, might be solved later once everything is connected, Priority 1 of issues
+
 # High Altitude Electro-Magnetic Pulse Calculator
-In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research.
+In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects and calculation methods of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research, transitional code from Tin Muang, and Front-end and maintenance efforts by Dr. Mark Robinson and Leon Karvecz.  Henry Newton is the sponsor of this project and provided all of the materials for us.
+
+This product is open-source and free to use.  Feel free to contact Leon Karvecz at lkarvec@gmail.com for questions about the project.
 
 ## Variables for the Equation
 #### X
