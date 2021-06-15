@@ -7,6 +7,8 @@ Contact the CanvasJS tech team to figure out the height sizing issue of the grap
 
 Clean up C++ from Tin
 
+Connect the API to the front end
+
 # High Altitude Electro-Magnetic Pulse Calculator
 In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research.
 
@@ -35,7 +37,7 @@ Time of Iterations in Shakes (from 10 to 100)
 #### RNP
 #### TOP
 
-# Getting Started with Create React App
+# Create React App additions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
