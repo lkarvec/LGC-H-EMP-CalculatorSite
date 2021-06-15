@@ -6,7 +6,7 @@ class Input extends Component{
         variable: this.props.variable
      }*/
     render() { 
-        console.log('props', this.props)
+        
         return ( 
             <div> 
                 <label>{this.props.input.variable}</label><br/>
@@ -15,7 +15,7 @@ class Input extends Component{
                     type="number"
                     placeholder={this.props.input.variableName}
                     value={this.props.input.value}
-                    //onChange={event => console.log("value changed!")}
+                    //onChange={event => console.log("value changed!")}ff
                     
                 /><br/>
                 

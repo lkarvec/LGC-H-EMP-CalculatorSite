@@ -1,5 +1,8 @@
 .App {
-  height: 100vh;
+  min-height: auto;
+  min-width: fit-content;
+  max-width: 100%;
+
 }
 
 .App-logo {
@@ -12,7 +15,7 @@
 
 .App-header {
   background-color: #202a3d;
-  min-height: 10%;
+  min-height: 7%;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -33,7 +36,8 @@
 .Body {
   background-color: #3d4b64;
   color: #d0d2d9;
-  height: 80%;
+  min-height: fit-content;
+  max-height: 83%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -78,8 +82,14 @@
   background:#37445b;
   color: #d0d2d9;
   margin-top: 20px;
+  margin-right: 20px;
 }
-
+.GraphShakes{
+  max-width: 1000px;
+  margin-top: 10px;
+  margin-left: 15px;
+  
+}
 .Single-Input{
   background:#37445b;
   color: #d0d2d9;
