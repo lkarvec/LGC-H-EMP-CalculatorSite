@@ -1,37 +1,37 @@
 # WORK IN PROGRESS
 
-###TO DO
+### TO DO
 Figure out hosting solutions and if they will require dockerization - note; EMPS offered help;
 Contact the CanvasJS tech team to figure out the height sizing issue of the graph
 Clean up C++ from Tin
 
-#High Altitude Electro-Magnetic Pulse Calculator
+# High Altitude Electro-Magnetic Pulse Calculator
 In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research.
 
-##Variables for the Equation
-####X
+## Variables for the Equation
+#### X
 Magnetic west (Northern Hemisphere)
-####Y
+#### Y
 Magnetic South (Northern Hemisphere)
-####Z
+#### Z
 Altitude (Northern Hemisphere)
-####HOB
+#### HOB
 Height of Burst in Kilometers (has to be greater than 50KM)
-####GAMYLD
+#### GAMYLD
 Gamma Yield of Burst in Kilotons
-####BFIELD
+#### BFIELD
 Magnitude of Earth's Magnetic Field in the absorption region below the burst in Webers/Sq Meter
-####BANGLE
+#### BANGLE
 Dip angle of the Magnetic Field in degrees
-####NDELR
+#### NDELR
 Integer number of steps between RMin and RMax (Has to be between 50 and 500)
-####ITER
+#### ITER
 Time of Iterations in Shakes (from 10 to 100)
-###Pomranning Constants
-####AP
-####BP
-####RNP
-####TOP
+### Pomranning Constants
+#### AP
+#### BP
+#### RNP
+#### TOP
 
 # Getting Started with Create React App
 
