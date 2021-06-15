@@ -2,7 +2,9 @@
 
 ### TO DO
 Figure out hosting solutions and if they will require dockerization - note; EMPS offered help;
+
 Contact the CanvasJS tech team to figure out the height sizing issue of the graph
+
 Clean up C++ from Tin
 
 # High Altitude Electro-Magnetic Pulse Calculator
