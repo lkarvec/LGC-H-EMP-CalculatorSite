@@ -19,7 +19,18 @@ Margins look funky, Fix at the end
 Output box has a state change issue, might be solved later once everything is connected, Priority 1 of issues
 
 # High Altitude Electro-Magnetic Pulse Calculator
-In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects and calculation methods of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research, transitional code from Tin Muang, and Front-end and maintenance efforts by Dr. Mark Robinson and Leon Karvecz.  Henry Newton is the sponsor of this project and provided all of the materials for us.
+In March 1975, Louis W. Seiler, Jr published a paper for the Air Force Institute of Technology to evaluate the effects and calculation methods of Electro-Magnetic Pulse.  Provided within the original document was the calculation methods in Fortran.  This program is a product of their research, transitional code from Tin Muang, and Front-end and maintenance efforts by Dr. Mark Robinson and Leon Karvecz.  [Henry Newton](https://www.linkedin.com/in/henry-newton-3161bab/) is the sponsor of this project and provided all of the materials for us.
+
+This coding expresses modifications to the original Fortran coding in a free Thesis by Terry Chapman of the USAF open source federal catalog number - [ADO 777841](https://apps.dtic.mil/sti/pdfs/AD0777841.pdf), or the rewrite at  ‘GitHub.com’ for  6448 volts/meter at [the LA Grid Coalition's publicly available EMP Library on GitHub](https://github.com/LAGridCoalition), 
+
+The original coding has been re-written into C++ but operated only from the console. This coding provides a front end and back end that updates the framework and makes it accessible to the public.
+
+The electromagnetic threat for this software focusses on large instantaneous destructive electromagnetic pulse (EMP) with a wavelength of 10 to the minus 7 power. A EMP event can destroy equipment (hardware and software) that enable the functioning of the entire society in the United States. A large and electromagnetic event can shut down power and damage critical systems across large regions or even the entire United States. The E1 portion is only explored in the Thesis and the E1 waveform is shown to be 50,000 v/M as a DC pulse which destroys items such as transistors and other microelectronics as well as large and small Utility power transformers per the AF Thesis written by [Louis Seiler in 1975](http://large.stanford.edu/courses/2019/ph241/rogers1/docs/ad-a009-208.pdf), 
+
+A shutdown could result in portions or the entirety of the nation operating without power for weeks or months. A successful attack means no electricity, no communications, no financial transactions, no water, no food, no transportation, and all other infrastructure that requires power will cease to function. Some of these infrastructures will degrade over hours or several days, others will cease immediately. See https://www.amazon.com/gp/product/B08NF79YGX,  for a NDRC book on the subject. 
+
+Also, the free “Electromagnetic Defense Task Force Report” by the USAF in March 2019, and it paints a sad picture of EMP. The Air Force report estimates that as much as 90 percent of the East Coast population will die within a year due to the lack of basic human needs, and the chaos resulting from an EMP. See https://www.airuniversity.af.edu/Portals/10/AUPress/Papers/LP_0004_ELECTROMAGNETIC_DEFENSE_TASK_FORCE_2_2019.PDF, 
+
 
 This product is open-source and free to use.  Feel free to contact Leon Karvecz at lkarvec@gmail.com for questions about the project.
 
