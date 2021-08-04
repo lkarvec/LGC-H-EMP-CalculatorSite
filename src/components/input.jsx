@@ -15,7 +15,7 @@ class Input extends Component{
                     type="number"
                     placeholder={this.props.input.variableName}
                     value={this.props.input.value}
-                    //onChange={event => console.log("value changed!")}ff
+                    //onChange={event => console.log("value changed!")}
                     
                 /><br/>
                 
