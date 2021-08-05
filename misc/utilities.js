@@ -67,10 +67,17 @@ module.exports = {
 
 
 	skim : (message) => {
+
 		//(I = (\d)+ : (\d+\.*\d*))  Regex for the skimmer
-		let y1 = [];
-		let y2 = [];
-		
+		let regex = /(I = (\d)+ : (\d+\.*\d*))/;
+		let badReg = /(I = (\d)+ : nan)/;
+		if (message.match(badReg)){
+			let ret = "Bad Output \n";
+			return ret;
+		}
+		let iterationShakes = {};
+		let iterationEField = {};
+		return ret;
 	},
 
 	sendResponse: (response, code, msgJson) => {

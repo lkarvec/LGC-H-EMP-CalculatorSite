@@ -14,7 +14,7 @@ class App extends Component {
   state = { 
     inputs: [ 
         /*
-        val is default value given by Henry, 
+        val is default value given by Henry, Used in the Seiler Thesis, 
         variable is the variable name in the equation to be displayed by the GUI
         This is an array of 13 OBJECTS
         ID is how to access them and is purely referential
@@ -22,21 +22,19 @@ class App extends Component {
         {id: 0, val: 0, variable: 'x', variableName: 'x'},
         {id: 1, val: 0, variable: 'y', variableName: 'y'},
         {id: 2, val: 0, variable: 'z', variableName: 'z'},
-        {id: 3, val: 70, variable: 'Height of Burst', variableName: 'HOB'},
-        {id: 4, val: 0, variable: 'Gamma', variableName: 'G'},
-        {id: 5, val: 0, variable: 'Magnitude of Magnetic Field', variableName: 'MAG'},
+        {id: 3, val: 100, variable: 'Height of Burst', variableName: 'HOB'},
+        {id: 4, val: 0.001, variable: 'Gamma', variableName: 'G'},
+        {id: 5, val: 0.00002, variable: 'Magnitude of Magnetic Field', variableName: 'MAG'},
         {id: 6, val: 20, variable: 'Dip Angle of Magnetic Field', variableName: 'DIP'},
         {id: 7, val: 50, variable: 'NDELR', variableName: 'NDELR'},
-        {id: 8, val: 10, variable: 'ITERATIONS', variableName: 'ITER'},
-        {id: 9, val: 0, variable: 'A for inverse shakes', variableName: 'A'},
-        {id: 10, val: 0, variable: 'B for inverse shakes', variableName: 'B'},
-        {id: 11, val: 0, variable: 'N for shakes', variableName: 'RNP'},
-        {id: 12, val: 0, variable: 'T0 for shakes', variableName: 'TOP'}
+        {id: 8, val: 10, v4ariable: 'ITERATIONS', variableName: 'ITER'},
+        {id: 9, val: 2.2, variable: 'A for inverse shakes', variableName: 'A'},
+        {id: 10, val: 0.25, variable: 'B for inverse shakes', variableName: 'B'},
+        {id: 11, val: 5.62603, variable: 'N for shakes', variableName: 'RNP'},
+        {id: 12, val: 2.24, variable: 'T0 for shakes', variableName: 'TOP'}
     ],
-    data: [
-
-    ],
-    output: {output:""},
+    data: {},
+    output: {},
     error: []
  }
 /*curl -X 'POST' \
@@ -75,7 +73,7 @@ class App extends Component {
 
   console.log('Clicked the button');
   
-  const data = fetch('https://slim1.fulgentcorp.com:14500/emp/calc', {
+  await fetch('https://slim1.fulgentcorp.com:14500/emp/calc', {
   body: bodyInputs,
   headers: {
     'Accept': "application/json",
@@ -89,6 +87,7 @@ class App extends Component {
       this.setState({
         data: JSON.parse(result.message)
       });
+      console.log('Set the Data : cutting the Json up');
       this.regexForOutput;
     },
     //error catch here so we can bug catch from the fetch and get more descriptive error checking.
@@ -102,8 +101,24 @@ class App extends Component {
 };
 
 regexForOutput = () => {
-  this.setState({output: utilities.skim(data)})
+  this.setState({output: utilities.skim(this.state.data)})
+  console.log('Set the Output : going to regex');
+
 };
+
+/* Structure of page
+Full page
+  Header
+    Logo + Title
+  Body
+    Input div
+      All of the Input Fields
+      Output
+    Submit button
+    Graphs
+  Footer
+    Credit Text and Links
+*/
 
  render() {
   return (
@@ -155,6 +170,7 @@ regexForOutput = () => {
           GitHub 
         </a></div>
          Made by Alexander Mains and Dr. Mark Robinson
+         Sponsored by the Louisiana Grid Coalition
         </p>
       </div>
       
