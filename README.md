@@ -1,7 +1,7 @@
 # WORK IN PROGRESS
 
 ### TO DO
-Figure out hosting solutions and if they will require dockerization - note; EMPS offered help;
+Figure out hosting solutions - note; EMPS offered help;
 
 Contact the CanvasJS tech team to figure out the height sizing issue of the graph
 
@@ -33,6 +33,8 @@ Also, the free “Electromagnetic Defense Task Force Report” by the USAF in Ma
 
 
 This product is open-source and free to use.  Feel free to contact Leon Karvecz at lkarvec@gmail.com for questions about the project.
+
+Command to hit the API is located in CURL.MD
 
 ## Variables for the Equation
 #### X
