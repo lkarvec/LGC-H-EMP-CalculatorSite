@@ -34,32 +34,7 @@ Also, the free “Electromagnetic Defense Task Force Report” by the USAF in Ma
 
 This product is open-source and free to use.  Feel free to contact Leon Karvecz at lkarvec@gmail.com for questions about the project.
 
-Command to hit the API is located in CURL.MD
-
-## Variables for the Equation
-#### X
-Magnetic west (Northern Hemisphere)
-#### Y
-Magnetic South (Northern Hemisphere)
-#### Z
-Altitude (Northern Hemisphere)
-#### HOB
-Height of Burst in Kilometers (has to be greater than 50KM)
-#### GAMYLD
-Gamma Yield of Burst in Kilotons
-#### BFIELD
-Magnitude of Earth's Magnetic Field in the absorption region below the burst in Webers/Sq Meter
-#### BANGLE
-Dip angle of the Magnetic Field in degrees
-#### NDELR
-Integer number of steps between RMin and RMax (Has to be between 50 and 500)
-#### ITER
-Time of Iterations in Shakes (from 10 to 100)
-### Pomranning Constants
-#### AP
-#### BP
-#### RNP
-#### TOP
+Command to hit the API is located in CURL.MD along with the variables of the equation.
 
 # Create React App additions
 
