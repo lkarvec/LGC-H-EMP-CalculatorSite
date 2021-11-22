@@ -7,8 +7,6 @@ Contact the CanvasJS tech team to figure out the height sizing issue of the grap
 
 Clean up C++ from Tin
 
-Connect the API to the front end
-
 Create CI/CD (not necessary for our current hosting solution but good practice)
 
 ### Known Issues
